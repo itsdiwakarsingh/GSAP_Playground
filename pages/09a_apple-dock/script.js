@@ -1,3 +1,4 @@
+import gsap from "gsap";
 // Get DOM elements
 const dock = document.querySelector(".dock"); // The dock container at the bottom
 const icons = document.querySelectorAll(".icon"); // Individual icons inside the dock
@@ -58,5 +59,6 @@ dock.addEventListener("mousemove", (e) => {
     const scale = Math.max(1, 1.7 - distance / maxDistance);
 
     // We'll animate this part using GSAP later
+
   });
 });
